@@ -25,6 +25,12 @@
             padding: 10px;
         }
 
+        .nav-item {
+            padding: 10px; /* Adjust the padding as needed */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
         section {
             margin: 20px 0;
         }
@@ -58,8 +64,8 @@
     <section id="login">
         <h2>Login</h2>
         <form id="loginForm" action="your_login_handler.php" method="post">
-            <label for="jobNumber">Job Number:</label>
-            <input type="text" id="jobNumber" name="jobNumber" required>
+            <label for="jobNumber">PF Number:</label>
+            <input type="text" id="PFNumber" name="PFNumber" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
@@ -74,15 +80,13 @@
         </header>
 
         <nav>
-            <a href="https://suleiman27.github.io/sulesh.github.io/" target="_blank">PLR </a>
-            <a href="https://suleiman27.github.io/suleh.github.io/" target="_blank">ROBBING</a>
-            <a href="https://suleiman27.github.io/santo.github.io/" target="_blank">Requisition Path</a>
-            <a href="#store requisition">Discrepancy Part</a>
+            <div class="nav-item"><a href="https://suleiman27.github.io/sulesh.github.io/" target="_blank">PLR</a></div>
+            <div class="nav-item"><a href="https://suleiman27.github.io/suleh.github.io/" target="_blank">ROBBING</a></div>
+            <div class="nav-item"><a href="https://suleiman27.github.io/santo.github.io/" target="_blank">Requisition Path</a></div>
+            <div class="nav-item"><a href="#store requisition">Discrepancy Part</a></div>
         </nav>
 
     </section>
-
-    
 
     <footer>
         <p>&copy; 2023 Your Website. All rights reserved.</p>
