@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSOCIATED VEHICLE ASSEMBLERS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Hide content initially */
+        #main-content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm" action="your_login_handler.php" method="post">
+            <label for="jobNumber">Job Number:</label>
+            <input type="text" id="jobNumber" name="jobNumber" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+    <section id="main-content">
+        <header>
+            <h1>ASSOCIATED VEHICLE ASSEMBLERS</h1>
+        </header>
+
+        <nav>
+            <a href="https://suleiman27.github.io/sulesh.github.io/" target="_blank">PLR </a>
+            <a href="https://suleiman27.github.io/suleh.github.io/" target="_blank">ROBBING</a>
+            <a href="https://suleiman27.github.io/santo.github.io/" target="_blank">Requisition Path</a>
+            <a href="#store requisition">Discrepancy Part</a>
+        </nav>
+
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to toggle visibility of login form and main content
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission for this example
+
+            // Open a new window for the main content
+            var mainContentWindow = window.open("", "_blank");
+            mainContentWindow.document.write(document.getElementById("main-content").innerHTML);
+
+            // Assuming successful login, close the login window
+            window.close();
+        });
+    </script>
+
+</body>
+
+</html>
